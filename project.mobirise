@@ -1,0 +1,101 @@
+{
+  "settings": {
+    "name": "recursos",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "amp-blocks-theme",
+      "title": "BlockPack for AMP",
+      "styling": {
+        "primaryColor": "#005af0",
+        "secondaryColor": "#00dcc0",
+        "successColor": "#64bf46",
+        "infoColor": "#eb49e1",
+        "warningColor": "#ff8f00",
+        "dangerColor": "#ffdc00",
+        "mainFont": "Inter",
+        "display1Font": "Roboto",
+        "display1Size": 4,
+        "display2Font": "Roboto",
+        "display2Size": 3.25,
+        "display5Font": "Roboto",
+        "display5Size": 1.8,
+        "display7Font": "Roboto",
+        "display7Size": 1.2,
+        "display4Font": "Roboto",
+        "display4Size": 1,
+        "isRoundedButtons": false,
+        "isScrollToTopButton": false,
+        "arrowColor": "#005af0"
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.4.1",
+    "siteFonts": [],
+    "imageResize": true,
+    "chatbutton": {},
+    "favicon": false,
+    "mbrsiteDomain": "qwhew9phtc",
+    "canonical-url": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 1,
+    "versionPublish": "5.4.1"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            ".image": {
+              "height": "(@imgHeight * 1px)",
+              "amp-img": {
+                "position": "relative",
+                "height": "100%",
+                "img": {
+                  "object-fit": "cover",
+                  "height": "100%"
+                }
+              },
+              "@media (max-width: 991px)": {
+                "padding-bottom": "1rem",
+                "height": "100%"
+              }
+            },
+            ".mbr-image-title": {
+              "padding": "1rem",
+              "position": "absolute",
+              "z-index": "1",
+              "bottom": "0",
+              "width": "100%"
+            }
+          },
+          "_name": "ampImage3",
+          "_sourceTheme": "amp-blocks-theme",
+          "_customHTML": "<section class=\"ampImage3\" group=\"Images &amp; Videos\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n    <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n    <input type=\"range\" inline=\"\" title=\"Height\" name=\"imgHeight\" min=\"200\" max=\"800\" step=\"50\" value=\"650\">\n    <input type=\"range\" inline=\"\" title=\"Width\" name=\"mediaSize\" min=\"1\" max=\"5\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected=\"\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Background</header>\n    <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div mbr-class=\"{'container':!fullWidth,\n                     'container-fluid':fullWidth}\">\n        <div class=\"mbr-flex mbr-px-4 mbr-row flex-wrap\">\n            <div class=\"image image1 mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-3': mediaSize == 1,\n                             'mbr-col-lg-4': mediaSize==2,\n                             'mbr-col-lg-6': mediaSize==3,\n                             'mbr-col-lg-8': mediaSize==4,\n                             'mbr-col-lg-9': mediaSize==5}\">\n                <amp-img src=\"@PROJECT_PATH@/assets/images/acg-hd-373x343.png\" layout=\"responsive\" width=\"706.8513119533528\" height=\"650\" alt=\"Accountability\" class=\"mobirise-loader\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                    <h4 mbr-if=\"showTitle\" class=\"mbr-image-title mbr-fonts-style mbr-white\" mbr-theme-style=\"display-2\" data-app-selector=\".image1 .mbr-image-title\" mbr-class=\"{'align-center': titleAlign == 2,\n                                    'align-right': titleAlign == 3}\">\n                        Title\n                    </h4>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/acg-hd-373x343.png\" alt=\"Accountability\" title=\"\" data-aspectratio=\"1\">\n                </amp-img>\n            </div>\n            <div class=\"image image2 mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-3': mediaSize == 5,\n                             'mbr-col-lg-4': mediaSize==4,\n                             'mbr-col-lg-6': mediaSize==3,\n                             'mbr-col-lg-8': mediaSize==2,\n                             'mbr-col-lg-9': mediaSize==1}\">\n                <amp-img src=\"@PROJECT_PATH@/assets/images/33.jpg\" layout=\"responsive\" width=\"541.7235943247504\" height=\"650\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                    <h4 mbr-if=\"showTitle\" class=\"mbr-image-title mbr-fonts-style mbr-white\" mbr-theme-style=\"display-2\" data-app-selector=\".image2 .mbr-image-title\" mbr-class=\"{'align-center': titleAlign == 2,\n                                    'align-right': titleAlign == 3}\">\n                        Title\n                    </h4>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/33.jpg\" alt=\"Mobirise\" title=\"\">\n                </amp-img>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sLh8HGur9R",
+          "_anchor": "ampImage3-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
